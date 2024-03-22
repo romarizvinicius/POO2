@@ -33,12 +33,12 @@ public class Aluno {
         this.notas = notas;
     }
 
-    public void calcularMedia(){
+    public double calcularMedia(){
         double soma = 0;
         for (int i = 0; i < notas.length; i++) {
             soma += notas[i];
-            soma = soma / notas.length;
-            }
+        }
+           return soma = soma / notas.length;
     }
 
 }

@@ -1,10 +1,10 @@
 public class Lutador {
 
     String nome;
-    Double energia;
-    Double força;
+    int energia;
+    int força;
 
-    public Lutador(String nome, Double energia, double força) {
+    public Lutador(String nome, int energia, int força) {
         this.nome = nome;
         this.energia = energia;
         this.força = força;
@@ -18,11 +18,11 @@ public class Lutador {
         this.nome = nome;
     }
 
-    public Double getEnergia() {
+    public int getEnergia() {
         return energia;
     }
 
-    public void setEnergia(Double energia) {
+    public void setEnergia(int energia) {
         this.energia = energia;
     }
 
@@ -30,15 +30,15 @@ public class Lutador {
         return força;
     }
 
-    public void setForça(Double força) {
+    public void setForça(int força) {
         this.força = força;
     }
 
-    public void reduzirEnergia (Double quantidade){
-        energia -= quantidade;
+    public void reduzirEnergia (int força2){
+        energia -= força2;
 
         if (energia < 0){
-            energia = (double) 0;
+            energia = 0;
         }
 
     }
