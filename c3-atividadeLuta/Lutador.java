@@ -2,9 +2,9 @@ public class Lutador {
 
     String nome;
     Double energia;
-    int força;
+    Double força;
 
-    public Lutador(String nome, Double energia, int força) {
+    public Lutador(String nome, Double energia, double força) {
         this.nome = nome;
         this.energia = energia;
         this.força = força;
@@ -26,17 +26,26 @@ public class Lutador {
         this.energia = energia;
     }
 
-    public int getForça() {
+    public double getForça() {
         return força;
     }
 
-    public void setForça(int força) {
+    public void setForça(Double força) {
         this.força = força;
     }
 
-    public void reduzirEnergia (){
+    public void reduzirEnergia (Double quantidade){
+        energia -= quantidade;
+
+        if (energia < 0){
+            energia = (double) 0;
+        }
+
     }
 
-    public void aplicarGolpe (){
+    public void aplicarGolpe (Lutador inimigo){
+        inimigo.reduzirEnergia(força);
+        System.out.println(nome + "golpeou " + inimigo.nome);
+        System.out.println(inimigo.energia + "teve sua energia reduzida para " + inimigo.energia);
     }
 }
