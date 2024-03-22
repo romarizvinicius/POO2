@@ -8,20 +8,19 @@ public class Main {
 
         Lutador bison = new Lutador("Bison", 100, 12);
 
-        for (int i = 0; i < 3; i++){
+        for (int i = 0; i < 3; i++) {
             ryu.aplicarGolpe(bison);
         }
 
         System.out.println("energia de bison dps dos golpes " + bison.energia);
 
-        for (int i = 0; i < 8; i++){
+        for (int i = 0; i < 8; i++) {
             bison.aplicarGolpe(ryu);
         }
 
         System.out.println("energia de ryu dps dos golpes " + ryu.energia);
 
-
         s.close();
     }
-    
+
 }
