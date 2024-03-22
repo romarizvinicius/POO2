@@ -4,15 +4,14 @@ public class Medico {
     String nome;
     char sexo;
     String especialidade;
-    String endereço;
-    Endereco endereco;
+    Endereco indereco;
 
-    public Medico(int codigo, String nome, char sexo, String especialidade, String endereço) {
+    public Medico(int codigo, String nome, char sexo, String especialidade, Endereco indereco) {
         this.codigo = codigo;
         this.nome = nome;
         this.sexo = sexo;
         this.especialidade = especialidade;
-        this.endereço = endereço;
+        this.indereco = indereco;
     }
 
     public int getCodigo() {
@@ -47,12 +46,12 @@ public class Medico {
         this.especialidade = especialidade;
     }
 
-    public String getEndereço() {
-        return endereço;
+    public Endereco getIndereco() {
+        return indereco;
     }
 
-    public void setEndereço(String endereço) {
-        this.endereço = endereço;
+    public void setIndereco(Endereco indereco) {
+        this.indereco = indereco;
     }
 
 }
