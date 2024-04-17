@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
-public class Aluno {
+public class Alunos {
     private String nome;
     private int matricula;
     private ArrayList<Nota> notas;
 
-    public Aluno(String nome, int matricula, ArrayList<Nota> notas) {
+    public Alunos(String nome, int matricula, ArrayList<Nota> notas) {
         this.nome = nome;
         this.matricula = matricula;
         this.notas = notas;
