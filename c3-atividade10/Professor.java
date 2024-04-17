@@ -42,6 +42,7 @@ public class Professor extends Funcionario {// extends sinalisando que a classe 
         System.out.println("turno " + getTurno());
     }
 
+    @Override
     public void funcaoDesempenhar() {
         System.out.println("ensinar");
     }
