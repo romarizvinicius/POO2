@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class main {
+public class Main {
     public static void main (String[] args) {
         Caixa caixa1 = new Caixa(1, "Livros", 5.0, 20.0);
         CaixaFragil caixa2 = new CaixaFragil(2, "Vidros", 3.0, 15.0, 10.0);
